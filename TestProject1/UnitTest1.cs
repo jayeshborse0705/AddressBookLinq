@@ -39,5 +39,13 @@ namespace Address
             string actual = address.RetrieveBasedOnCityorState("valsad", "Maharashtra");
             Assert.AreEqual(expected, actual);
         }
+
+        [Test]
+        public void GivenRetrieveCount_BasedOnCityandState_returnString()
+        {
+            string expected = "1 1 ";
+            string actual = address.RetrieveCountBasedOnCityorState();
+            Assert.AreEqual(expected, actual);
+        }
     }
 }
