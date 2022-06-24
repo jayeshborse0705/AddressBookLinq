@@ -22,7 +22,15 @@ namespace Address
         public void GivenModifyValues_returnInteger()
         {
             int expected = 0;
-            int actual = address.EditDataTable("Singh", "Firstname");
+            int actual = address.EditDataTable("Sharama", "Firstname");
+            Assert.AreEqual(actual, expected);
+        }
+
+        [Test]
+        public void GivenDeleteQuery_returnInteger()
+        {
+            int expected = 1;
+            int actual = address.DeleteRowInDataTable("Hari");
             Assert.AreEqual(actual, expected);
         }
     }
