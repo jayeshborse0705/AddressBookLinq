@@ -33,5 +33,11 @@ namespace Address
             int actual = address.DeleteRowInDataTable("Hari");
             Assert.AreEqual(actual, expected);
         }
+        public void GivenRetrieveQuery_BasedOnCityandState_returnString()
+        {
+            string expected = "Shyam Hari";
+            string actual = address.RetrieveBasedOnCityorState("valsad", "Maharashtra");
+            Assert.AreEqual(expected, actual);
+        }
     }
 }
