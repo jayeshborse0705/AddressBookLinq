@@ -15,7 +15,7 @@ namespace Address
         [Test]
         public void GivenInsertValues_returnInteger()
         {
-            int expected = 1;
+            int expected = 2;
             int actual = address.AddValues();
             Assert.AreEqual(actual, expected);
         }

@@ -67,25 +67,25 @@ namespace AddressBookLinq
             Contact contact = new Contact();
             Contact contacts = new Contact();
             contact.ID = 1;
-            contact.FirstName = "Hari";
-            contact.LastName = "Sharma";
-            contact.PhoneNumber = 9098765490;
-            contact.Email = "hariSharma@gmail.com";
-            contact.Address = "ganesh colony";
-            contact.City = "valsad";
-            contact.State = "Gujrat";
-            contact.zip = 424307;
+            contact.FirstName = "Rajvardhan";
+            contact.LastName = "Singh";
+            contact.PhoneNumber = 8439560765;
+            contact.Email = "rajvardhan.2627@gmail.com";
+            contact.Address = "Himalayan Colony";
+            contact.City = "Najibabad";
+            contact.State = "UP";
+            contact.zip = 246763;
             InsertintoDataTable(contact);
 
             contacts.ID = 2;
-            contacts.FirstName = "shyam";
-            contacts.LastName = "mishra";
-            contacts.PhoneNumber = 8008790940;
-            contacts.Email = "shyammishra@gmail.com";
-            contacts.Address = "krishna Road";
-            contacts.City = "buranpur";
-            contacts.State = "mp";
-            contacts.zip = 703401;
+            contacts.FirstName = "Kshitij";
+            contacts.LastName = "Puri";
+            contacts.PhoneNumber = 7012657852;
+            contacts.Email = "puri.kshitij@gmail.com";
+            contacts.Address = "IIT Road";
+            contacts.City = "Roorke";
+            contacts.State = "UK";
+            contacts.zip = 247001;
             InsertintoDataTable(contacts);
 
             return dataTable.Rows.Count;
@@ -104,7 +104,6 @@ namespace AddressBookLinq
             dtRow["PhoneNumber"] = contact.PhoneNumber;
             dtRow["Email"] = contact.Email;
             dataTable.Rows.Add(dtRow);
-
         }
         public void Display()
         {
